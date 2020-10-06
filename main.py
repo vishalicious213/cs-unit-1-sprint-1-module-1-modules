@@ -6,6 +6,11 @@ import math
 
 functions = dir(math)
 # print(functions)
+
+# as for loop / if statement
 for word in functions:
   if word.startswith("is"):
     print(word)
+
+# as list comprehension with if statement
+print([word for word in functions if word.startswith("is")])
