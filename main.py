@@ -4,4 +4,8 @@ Import the "math" module. Then, print an alphabetically sorted list of all the f
 # YOUR CODE HERE
 import math
 
-print(dir(math))
+functions = dir(math)
+# print(functions)
+for word in functions:
+  if word.startswith("is"):
+    print(word)
